@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the integer");
+        int no = sc.nextInt();
+        int rev=0;
+        int n1;
+        for(n1=no;no>0;n1=no%10,rev=rev*10+n1,no=no/10);
+        System.out.println(rev);
+      
+}
+}
